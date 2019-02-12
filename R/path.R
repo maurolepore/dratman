@@ -1,5 +1,7 @@
 #' Create paths to packages in a CRAN-like repository.
 #'
+#' @param mac_version Versoin of mac the package was build on.
+#'
 #' @return Path
 #' @export
 #'

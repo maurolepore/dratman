@@ -12,6 +12,9 @@ path_win()
 
 path_mac(mac_version = "el-capitan")
 }
+\arguments{
+\item{mac_version}{Versoin of mac the package was build on.}
+}
 \value{
 Path
 }

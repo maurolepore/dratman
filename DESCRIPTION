@@ -13,7 +13,8 @@ License: GPL-3
 Imports: 
     devtools,
     drat,
-    fs
+    fs,
+    here
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
