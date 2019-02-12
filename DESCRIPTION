@@ -1,21 +1,20 @@
 Package: dratman
-Title: What the Package Does (One Line, Title Case)
+Title: Make It Easier to Work With Drat Repositories
 Version: 0.0.0.9000
 Authors@R: 
     c(person(given = "Mauro",
              family = "Lepore",
              role = c("aut", "ctr", "cre"),
-             email = "leporem@si.edu"),
-      person(given = "CTFS-ForestGEO",
-             role = "cph",
-             email = "ForestGEO@si.edu"))
-Description: What the package does (one paragraph).
+             email = "leporem@si.edu"))
+Description: dratman is a personal package to make it
+    easier to add packages to a drat repository, including source, and
+    windows and mac binaries.
 License: GPL-3
+Imports: 
+    devtools,
+    drat,
+    fs
 Encoding: UTF-8
 LazyData: true
-Imports: 
-    drat,
-    devtools,
-    fs
-RoxygenNote: 6.1.1
 Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
