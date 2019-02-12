@@ -1,0 +1,8 @@
+^README\.Rmd$
+^tmp\.R$
+^bin$
+^src$
+^\.travis\.yml$
+^LICENSE\.md$
+^\.Rproj\.user$
+^drat\.Rproj$
