@@ -4,25 +4,46 @@
 #'
 #' @inheritParams drat::insertPackage
 #'
+#' @seealso [drat::insertPackage()].
+#'
 #' @return NULL
 #' @export
 #'
 #' @examples
 #' \dontrun{
-#' build_and_instert_src(path_src())
+#' path_to_source <- "../fgeo.x"
+#' build_and_instert_src(path_to_source)
+#'
+#' # If you are on windows
+#' build_and_instert_bin(path_to_source)
+#'
+#' # If you are on mac
+#' build_and_instert_bin(path_to_source)
 #' }
-build_and_insert_src <- function(path, repodir = ".") {
-  drat::insertPackage(devtools::build(path, binary = FALSE), repodir = repodir)
+build_and_insert_src <- function(file, repodir = ".") {
+  drat::insertPackage(
+    devtools::build(pkg = file, binary = FALSE), repodir = repodir
+  )
 }
 
-build_and_insert_bin <- function(path, repodir = ".") {
-  drat::insertPackage(devtools::build(path, binary = TRUE), repodir = repodir)
+#' @rdname build_and_insert_src
+#' @export
+build_and_insert_bin <- function(file, repodir = ".") {
+  drat::insertPackage(
+    devtools::build(pkg = file, binary = TRUE), repodir = repodir
+  )
 }
 
-insert_bin <- function(path, repodir = ".") {
-  drat::insertPackage(file = path, repodir = repodir)
-}
-
+#' Help to create a path to downloads
+#'
+#' @param file File name.
+#'
+#' @return A path.
+#' @export
+#'
+#' @examples
+#' path_downloads()
+#' path_downloads("fgeo_1.0.0.tgz")
 path_downloads <- function(file = NULL) {
   if (is.null(file)) {
     fs::path("~", "Downloads")
