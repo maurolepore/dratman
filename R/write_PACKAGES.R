@@ -9,9 +9,11 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' write_packages_src(path_src())
 #' write_packages_win(path_win())
 #' write_packages_mac(path_mac())
+#' }
 write_packages_src <- function(dir = path_src()) {
   tools::write_PACKAGES(dir = dir, type = "source")
 }

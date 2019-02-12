@@ -19,7 +19,9 @@ Path
 Create paths to packages in a CRAN-like repository.
 }
 \examples{
+\dontrun{
 path_src()
 path_win()
 path_mac()
+}
 }

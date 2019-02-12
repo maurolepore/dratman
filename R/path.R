@@ -4,9 +4,11 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' path_src()
 #' path_win()
 #' path_mac()
+#' }
 path_src <- function() {
   here::here("src", "contrib")
 }

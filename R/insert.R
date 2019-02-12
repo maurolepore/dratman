@@ -42,8 +42,10 @@ build_and_insert_bin <- function(file, repodir = ".") {
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' path_downloads()
 #' path_downloads("fgeo_1.0.0.tgz")
+#' }
 path_downloads <- function(file = NULL) {
   if (is.null(file)) {
     fs::path("~", "Downloads")

@@ -31,7 +31,9 @@ found and no files were written.
 Write and delete packages.
 }
 \examples{
+\dontrun{
 write_packages_src(path_src())
 write_packages_win(path_win())
 write_packages_mac(path_mac())
+}
 }

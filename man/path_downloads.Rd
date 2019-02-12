@@ -16,6 +16,8 @@ A path.
 Help to create a path to downloads
 }
 \examples{
+\dontrun{
 path_downloads()
 path_downloads("fgeo_1.0.0.tgz")
+}
 }
